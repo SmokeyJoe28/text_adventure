@@ -1,15 +1,11 @@
-<html
-<body>
-  <script>
-  var title = "Text Adventure!";
-  var welcome = "Welcome to Text Adventure! You are trapped in a room with only"
-                  + "  two doors. Hit the next button and begin your adventure!";
+<% @counter = 0 %>
 
-  document.write('<h1>' + title + '</h1>' + '<br>' + '<p>' + welcome + '</p>');
-  </script>
+<h1> <%= render :text =>  "Text Adventure!" %> </h1>
+<p> <%= render :text => "Welcome to Text Adventure! Click next to play" %> </p>
 
-  <form name = "next" action="game/play" method="get">
-    <input type="submit" value="Next">
-  </form>
-  </body>
-  </html>
+
+
+<form name = "next" action="/game/play" method="get">
+  <input type="submit" value="Next">
+</form>
+

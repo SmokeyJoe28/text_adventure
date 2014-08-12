@@ -1,6 +1,9 @@
 
-<form name="input" action="game/input" method="get">
-  Action: <input type="text" name="input_text"><br>
+
+<h1><%= render :text => "Text Adventure!" %></h1>
+<%= render :text => "Choose a door, right or left to proceed" %><br>
+
+<form name="input" action="/game/input" method="get"><br>
+  Action: <input type="text" name="input_text">
   <input type="submit" value="Submit">
 </form>
-
