@@ -1,7 +1,11 @@
 
 
 <h1><%= render :text => "Text Adventure!" %></h1>
-<%= render :text => "Choose a door, right or left to proceed" %><br>
+<%= render :text => "You have suddenly awoke in a room with two doors." %><br>
+<%= render :text => "You currently have nothing on you. " %><br>
+<%= render :text => "You can go either left or right. " %><br>
+<%= render :text => "Type left or right to proceed. " %><br>
+
 
 <form name="input" action="/game/input" method="get"><br>
   Action: <input type="text" name="input_text">

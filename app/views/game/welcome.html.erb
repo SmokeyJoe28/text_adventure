@@ -5,7 +5,7 @@
 
 
 
-<form name = "next" action="/game/play" method="get">
+<form name = "next" action=<%=room_path(Room.first)%> method="get">
   <input type="submit" value="Next">
 </form>
 

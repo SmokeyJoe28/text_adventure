@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= @room.name %></strong>
+</p>
+
+<p>
+<p><%= @room.description %></p>
+</p>
+
+<form name="input" action="/game/input" method="get"><br>
+  Action: <input type="text" name="input_text">
+  <input type="hidden" value="<%=@room.id%>" name="room_id">
+  <input type="submit" value"Submit"><br>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>

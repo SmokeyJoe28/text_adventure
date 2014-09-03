@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :moves
+
+  resources :rooms
+
   get 'game/play' => "game#play"
   get 'game/input' => "game#input"
   # The priority is based upon order of creation: first created -> highest priority.
